@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('gender', function (Blueprint $table) {
+        Schema::create('genders', function (Blueprint $table) {
             $table->id();
-            $table->enum('genero', ['Masculino', 'Femenino', 'Otro']); 
+            $table->string('name',100);
             $table->timestamps();
         });
     }
