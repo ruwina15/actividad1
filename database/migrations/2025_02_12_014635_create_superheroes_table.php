@@ -17,7 +17,6 @@ return new class extends Migration
             $table->foreignId('gender_id')->constrained('genders');
             $table->string('name',100);
             $table->string('realName',150);
-            $table->string('Universe',70);
             $table->string('Picture',200)->nullable();
             $table->timestamps();
         });
