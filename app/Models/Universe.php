@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Universe extends Model
 {
-    //protected $table = "universe";
+    //especificar que columnas puede editar el usuario en este caso solo name
+    //'name','otra columna','otra columna'
+    
+    protected $fillable = [
+        'name'
+    ];
 }

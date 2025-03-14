@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gender test</title>
+    <title>Gender</title>
 </head>
 <body>
-    <h1>Gender</h1>
+<h1>Gender</h1>
 
     <table>
         <thead>
@@ -17,15 +17,11 @@
         </thead>
 
         <tbody>
-            @foreach($gender as $item)
             <tr>
-                <td>{{$item->id}}</td>
-                <td>{{$item->name}}</td>
+                <td>{{$genders->id}}</td>
+                <td>{{$genders->name}}</td>
             </tr>
-            @endforeach
-            
         </tbody>
     </table>
-    
 </body>
 </html>
