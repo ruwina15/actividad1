@@ -7,6 +7,9 @@
 </head>
 <body>
     <h1>Create superheroe</h1>
+    <hr>
+        <a href="{{ route('superheroes.index') }}">Return to index</a>
+    <hr>
 
     <form action="{{ route('superheroes.store') }}" method="post">
         <!-- genera un token unico -->

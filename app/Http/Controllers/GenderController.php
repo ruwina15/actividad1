@@ -24,7 +24,7 @@ class GenderController extends Controller
             'name' => $request->name
         ]);
 
-        return to_route('gender.index'); 
+        return to_route('genders.index'); 
     }
 
     public function show(string $id)
@@ -32,5 +32,27 @@ class GenderController extends Controller
         $genders = Gender::find($id);
         return view('gender.show',compact('genders'));
 
+    }
+
+    public function edit(string $id)
+    {
+        $genders = Gender::find($id);
+        return view ('gender.edit', compact('genders'));
+    }
+
+    public function update(Request $request, string $id)
+    {
+        $genders = Gender::find($id);
+        $genders->update([
+           'name' => $request->name,
+        ]);
+        return to_route('genders.index');
+    }
+
+    public function destroy(string $id)
+    {
+        $genders = Gender::find($id);
+        $genders->delete();
+        return to_route('genders.index');
     }
 }

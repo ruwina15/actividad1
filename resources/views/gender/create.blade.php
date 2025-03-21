@@ -7,8 +7,11 @@
 </head>
 <body>
     <h1>Create gender</h1>
+    <hr>
+        <a href="{{ route('genders.index') }}">Return to index</a>
+    <hr>
 
-    <form action="{{ route('gender.store') }}" method="post">
+    <form action="{{ route('genders.store') }}" method="post">
         <!-- genera un token unico -->
         @csrf
          
