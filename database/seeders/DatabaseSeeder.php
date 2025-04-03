@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]); */
-        $this->call([GenderSeeder::class,UniverseSeeder::class]);
+        $this->call([GenderSeeder::class,UniverseSeeder::class,UserSeeder::class]);
 
         Superheroe::factory(10)->create();
 
