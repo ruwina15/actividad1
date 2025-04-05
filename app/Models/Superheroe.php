@@ -18,4 +18,12 @@ class Superheroe extends Model
         'realName',
         'Picture'
     ];
+
+    public function universo(){
+        return $this->belongsTo(Universe::class);
+    }
+
+    public function genero(){
+        return $this->belongsTo(Gender::class);
+    }
 }

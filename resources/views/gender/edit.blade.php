@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit gender</title>
-</head>
-<body>
+@extends('layouts.main')
+
+@section('content')
     <h1>Edit gender</h1>
 
     <form action="{{ route('genders.update',$genders->id) }}" method="post">
@@ -20,5 +15,4 @@
        
         <input type="submit" value="Edit gender">
     </form>
-</body>
-</html>
+@endsection

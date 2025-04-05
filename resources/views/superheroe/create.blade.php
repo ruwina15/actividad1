@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create superheroe</title>
-</head>
-<body>
+
+@extends('layouts.main')
+@section('content')
     <h1>Create superheroe</h1>
     <hr>
         <a href="{{ route('superheroes.index') }}">Return to index</a>
@@ -44,5 +39,4 @@
         <br><br> 
         <input type="submit" value="Create Superheroe">
     </form>
-</body>
-</html>
+@endsection

@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superheroes table</title>
-</head>
-<body>
+
+@extends('layouts.main')
+@section('content')
     <h1>Superheroes</h1>
 
     <hr>
@@ -29,8 +24,8 @@
             @foreach($superheroes as $item)
             <tr>
                 <td>{{$item->id}}</td>
-                <td>{{$item->universe_id}}</td>
-                <td>{{$item->gender_id}}</td>
+                <td>{{$item->universo->name}}</td>
+                <td>{{$item->genero->name}}</td>
                 <td>{{$item->name}}</td>
                 <td>{{$item->realName}}</td>
                 <td>{{$item->Picture}}</td>
@@ -49,6 +44,4 @@
             
         </tbody>
     </table>
-    
-</body>
-</html>
+@endsection
