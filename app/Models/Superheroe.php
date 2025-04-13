@@ -20,10 +20,10 @@ class Superheroe extends Model
     ];
 
     public function universo(){
-        return $this->belongsTo(Universe::class);
+        return $this->belongsTo(Universe::class,'universe_id');
     }
 
     public function genero(){
-        return $this->belongsTo(Gender::class);
+        return $this->belongsTo(Gender::class,'gender_id');
     }
 }

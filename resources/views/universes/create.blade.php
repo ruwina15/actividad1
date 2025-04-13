@@ -1,5 +1,6 @@
 @extends('layouts.main')
 
+@section('title','Universes Create')
 @section('content')
     <h1>Create universe</h1>
     <hr>

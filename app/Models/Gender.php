@@ -10,7 +10,8 @@ class Gender extends Model
         'name'
     ];
 
-    public function superheroe(){
+    public function superheroes(){
         return $this->hasMany(Superheroe::class);
     }
+
 }

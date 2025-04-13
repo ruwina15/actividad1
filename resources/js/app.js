@@ -1,5 +1,7 @@
 import './bootstrap';
 
+import '../sass/style.scss';
+
 import Alpine from 'alpinejs';
 
 window.Alpine = Alpine;

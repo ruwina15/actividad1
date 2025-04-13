@@ -1,5 +1,6 @@
 @extends('layouts.main')
 
+@section('title','Universes Edit')
 @section('content')
     <h1>Edit universes</h1>
 

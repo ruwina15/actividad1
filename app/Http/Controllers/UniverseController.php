@@ -48,6 +48,7 @@ class UniverseController extends Controller
         return view('universes.show',compact('universes'));
     }
 
+
     /**
      * Show the form for editing the specified resource.
      */

@@ -1,5 +1,6 @@
 @extends('layouts.main')
 
+@section('title','Gender')
 @section('content')
     <h1>Gender</h1>
 

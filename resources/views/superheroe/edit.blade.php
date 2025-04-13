@@ -1,5 +1,6 @@
 @extends('layouts.main')
 
+@section('title','Superheroes Edit')
 @section('content')
     <h1>Edit superheroe</h1>
 

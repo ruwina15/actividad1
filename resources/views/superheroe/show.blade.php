@@ -1,8 +1,8 @@
 @extends('layouts.main')
 
+@section('title','Superheroes Show')
 @section('content')
-    <!-- <h1>{{ $superheroes->name }}</h1> -->
-    <h1>Superheroes</h1>
+    <h1>{{ $superheroes->name }}</h1>
 
     <table>
         <thead>

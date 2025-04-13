@@ -1,5 +1,7 @@
 
 @extends('layouts.main')
+
+@section('title','Superheroes Create')
 @section('content')
     <h1>Create superheroe</h1>
     <hr>
