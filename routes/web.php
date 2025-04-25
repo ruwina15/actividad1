@@ -1,18 +1,22 @@
 <?php
 
-use App\Http\Controllers\GenderApi;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\UniverseApi;
 use App\Http\Controllers\SuperheroeController;
 use App\Http\Controllers\UniverseController;
 use App\Http\Controllers\GenderController;
-use App\Http\Controllers\SuperheroApi;
-use App\Models\Superheroe;
+use App\Http\Controllers\FileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/form', function () {
+    return view('form');
+});
+
+Route::post('/upload', [FileController::class, 'upload'])->name('upload');
+Route::post('/download', [FileController::class, 'download'])->name('download');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -29,6 +33,7 @@ Route::middleware('auth')->group(function () {
         'genders'   =>  GenderController::class,
 
     ]);
+   
 });
 
 require __DIR__.'/auth.php';
